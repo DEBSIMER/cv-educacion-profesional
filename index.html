@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142d4e">
+  <meta name="description" content="CV profesional de María Silvia Morosini: educación, gestión de proyectos, cultura, tecnología y recursos humanos.">
+  <title>María Silvia Morosini | CV Profesional</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #182b43;
+      --muted: #53647a;
+      --navy: #142d4e;
+      --blue: #2871a8;
+      --teal: #2b827c;
+      --paper: #ffffff;
+      --background: #f3f6fa;
+      --line: #dce4ed;
+      --soft-blue: #eaf2f8;
+      --shadow: 0 16px 45px rgba(20, 45, 78, .08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    a { color: var(--blue); text-underline-offset: 3px; }
+    a:hover { color: var(--teal); }
+    a:focus-visible, button:focus-visible { outline: 3px solid #e6a93d; outline-offset: 3px; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10;
+      padding: .7rem 1rem; background: #fff; border-radius: .5rem;
+    }
+    .skip-link:focus { top: 1rem; }
+    .hero {
+      position: relative; overflow: hidden;
+      padding: 4.5rem 1.25rem 3.75rem;
+      color: #fff;
+      background: linear-gradient(125deg, #142d4e 0%, #1c5277 68%, #267c7a 100%);
+    }
+    .hero::after {
+      content: ""; position: absolute; width: 360px; height: 360px;
+      right: -100px; top: -180px; border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.04), 0 0 0 86px rgba(255,255,255,.035);
+    }
+    .hero-inner, main, footer { width: min(1080px, calc(100% - 2rem)); margin-inline: auto; }
+    .eyebrow { margin: 0 0 .7rem; color: #b7d9e8; font-size: .82rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { max-width: 800px; margin: 0; font-size: clamp(2.35rem, 6vw, 4.5rem); line-height: 1.06; letter-spacing: -.045em; }
+    .hero-title { max-width: 760px; margin: 1.15rem 0 1.5rem; color: #e0edf5; font-size: clamp(1.05rem, 2vw, 1.3rem); }
+    .contact-list { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; margin: 0; padding: 0; list-style: none; }
+    .contact-list a { color: #fff; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.8rem; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 44px; padding: .65rem 1rem; border: 1px solid rgba(255,255,255,.5);
+      border-radius: .55rem; color: #fff; font-weight: 700; text-decoration: none;
+    }
+    .button.primary { border-color: #fff; background: #fff; color: var(--navy); }
+    .button:hover { background: rgba(255,255,255,.12); color: #fff; }
+    .button.primary:hover { background: #eaf2f8; color: var(--navy); }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 285px; gap: 1.5rem; align-items: start; padding-block: 2rem 3rem; }
+    .content { display: grid; gap: 1.25rem; min-width: 0; }
+    .card, .sidebar-card { background: var(--paper); border: 1px solid var(--line); border-radius: .9rem; box-shadow: var(--shadow); }
+    .card { padding: clamp(1.25rem, 3vw, 2rem); }
+    .sidebar { display: grid; gap: 1.25rem; }
+    .sidebar-card { padding: 1.35rem; }
+    h2 { margin: 0 0 1rem; color: var(--navy); font-size: 1.4rem; letter-spacing: -.02em; }
+    h3 { margin: 0; color: var(--navy); font-size: 1.08rem; line-height: 1.4; }
+    p { margin: .55rem 0 0; }
+    .muted, .meta { color: var(--muted); }
+    .meta { margin-top: .2rem; font-size: .93rem; }
+    .timeline { display: grid; gap: 1.35rem; }
+    .entry { position: relative; padding-left: 1.15rem; border-left: 2px solid #d6e5ee; }
+    .entry::before { content: ""; position: absolute; left: -6px; top: .35rem; width: 10px; height: 10px; border-radius: 50%; background: var(--teal); }
+    ul { padding-left: 1.2rem; }
+    .entry ul { margin: .55rem 0 0; }
+    li + li { margin-top: .3rem; }
+    .skill-list { display: grid; gap: .8rem; margin: 0; padding: 0; list-style: none; }
+    .skill-list li { padding: .75rem .85rem; border-radius: .6rem; background: var(--soft-blue); }
+    .skill-list li + li { margin-top: 0; }
+    .skill-list strong { display: block; color: var(--navy); }
+    .tag-list { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
+    .tag-list li { padding: .35rem .65rem; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--muted); font-size: .88rem; }
+    .tag-list li + li { margin-top: 0; }
+    .project-link { display: block; padding: .85rem 0; border-top: 1px solid var(--line); }
+    .project-link:first-of-type { border-top: 0; padding-top: 0; }
+    .project-link strong { display: block; color: var(--navy); }
+    footer { padding: 0 0 2rem; color: var(--muted); font-size: .9rem; text-align: center; }
+    @media (max-width: 800px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) {
+      .hero { padding-block: 3.2rem 2.8rem; }
+      .hero-inner, main, footer { width: min(100% - 1.25rem, 1080px); }
+      .sidebar { grid-template-columns: 1fr; }
+      .contact-list { display: grid; gap: .35rem; }
+    }
+    @media print {
+      :root { --background: #fff; --shadow: none; }
+      body { background: #fff; font-size: 10.5pt; }
+      .hero { padding: 1.5rem 0; color: var(--ink); background: #fff; border-bottom: 2px solid var(--navy); }
+      .hero::after, .hero-actions, .skip-link { display: none; }
+      .eyebrow, .hero-title, .contact-list a { color: var(--ink); }
+      h1 { font-size: 30pt; }
+      .layout { grid-template-columns: 1fr 240px; gap: .8rem; padding-block: .8rem; }
+      .content, .sidebar { gap: .7rem; }
+      .card, .sidebar-card { padding: .85rem; box-shadow: none; break-inside: avoid; }
+      a { color: inherit; }
+      footer { padding-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Currículum profesional · Salta, Argentina</p>
+      <h1>María Silvia Morosini</h1>
+      <p class="hero-title">Licenciada y Profesora en Expresión Corporal <span aria-hidden="true">|</span> Gestión de Proyectos, Tecnología y Recursos Humanos</p>
+      <ul class="contact-list" aria-label="Datos de contacto">
+        <li>📍 Salta, Argentina</li>
+        <li>📱 <a href="https://wa.me/5493875089464">+54 9 387 508 9464</a></li>
+        <li>✉️ <a href="mailto:msilvia.morosini@gmail.com">msilvia.morosini@gmail.com</a></li>
+        <li>🌐 <a href="https://www.linkedin.com/in/mar">LinkedIn</a></li>
+      </ul>
+      <div class="hero-actions">
+        <a class="button primary" href="mailto:msilvia.morosini@gmail.com">Contactar</a>
+        <button class="button" type="button" onclick="window.print()">Imprimir / guardar como PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" class="layout">
+    <div class="content">
+      <section class="card" aria-labelledby="perfil">
+        <h2 id="perfil">Perfil profesional</h2>
+        <p>Profesional con más de quince años de experiencia en gestión, desarrollo de proyectos y coordinación de equipos multidisciplinarios en los sectores gubernamental, educativo, tecnológico y creativo.</p>
+        <p>Se destaca por resolver problemas con enfoques innovadores, aplicando lógica, agilidad e integración tecnológica para optimizar procesos. Cuenta con alta capacidad de coordinación, comunicación y articulación institucional.</p>
+      </section>
+
+      <section class="card" aria-labelledby="experiencia">
+        <h2 id="experiencia">Trayectoria profesional y ejecutiva</h2>
+        <div class="timeline">
+          <article class="entry">
+            <h3>Coordinadora Ejecutiva</h3>
+            <p class="meta">Ballet Folklórico de la Provincia de Salta — Ministerio de Cultura · Julio 2023 – Presente</p>
+            <ul>
+              <li>Planificación ejecutiva anual, administración presupuestaria y optimización de recursos para producciones institucionales.</li>
+              <li>Contrataciones, compras del área, logística integral y cumplimiento de plazos operativos.</li>
+              <li>Gestión de relaciones internas, resolución de controversias y elaboración de reportes de gestión.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <h3>Dirección General y Producción Ejecutiva</h3>
+            <p class="meta"><a href="https://sincoordenadas.com.ar">Sin Coordenadas — Consultoría de Gestión y Desarrollo Creativo</a> · 2009 – Presente</p>
+            <ul>
+              <li>Dirección de proyectos tecnológicos y de economía creativa.</li>
+              <li>Desarrollo de experiencias AR 360° (Proyecto Cuarzo, Beca FNA), videojuegos interactivos y proyectos de tokenización Web3.</li>
+              <li>Capacitación sobre recursos financieros y mercados culturales para secretarios de cultura del NOA.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <h3>Coordinadora General de Museos</h3>
+            <p class="meta">Subsecretaría de Patrimonio Cultural de la Provincia de Salta · Noviembre 2017 – Diciembre 2019</p>
+            <ul>
+              <li>Dirección y supervisión de 12 museos provinciales y 2 monumentos históricos.</li>
+              <li>Administración presupuestaria, análisis estadístico e indicadores de producción y resultados para el Sistema de Gestión (SGI).</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <h3>Trayectoria docente y coordinación académica</h3>
+            <p class="meta">IES N.º 6004, Colegio Santa María, Colegio Santísima Trinidad y Bachillerato Humanista · 2011 – Presente</p>
+            <ul>
+              <li>Coordinación de la Tecnicatura de Puesta en Escena y Producción Artística (IES 6004).</li>
+              <li>Docencia en Derechos y Bienes Culturales, Producción y Gestión, y Tecnología Aplicada al Arte.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="formacion">
+        <h2 id="formacion">Formación académica</h2>
+        <div class="timeline">
+          <article class="entry">
+            <h3>Licenciatura en Expresión Corporal</h3>
+            <p class="meta">Universidad Nacional del Arte (UNA) · 2011</p>
+            <p>Promedio: 8,60. Tesis: “Expresionismo y Expresión Corporal” (calificación: 10/10).</p>
+          </article>
+          <article class="entry">
+            <h3>Profesorado en Expresión Corporal</h3>
+            <p class="meta">Universidad Católica de Salta (UCASAL) · 2023</p>
+            <p>Formación docente profesional. Promedio: 9/10.</p>
+          </article>
+          <article class="entry">
+            <h3>Maestría en Administración del Sector Cultural y Creativo</h3>
+            <p class="meta">Universidad de Buenos Aires (UBA - FCE)</p>
+            <p>Cursado completo finalizado; tesis en desarrollo.</p>
+          </article>
+          <article class="entry">
+            <h3>Diplomatura en Recursos Humanos</h3>
+            <p class="meta">Universidad Maimónides · 2016 · Promedio: 9/10</p>
+          </article>
+          <article class="entry">
+            <h3>Diplomatura en Blockchain y Finanzas Digitales</h3>
+            <p class="meta">Universidad Tecnológica Nacional (UTN) · 2025</p>
+          </article>
+          <article class="entry">
+            <h3>Posgrado en Gestión Cultural y Comunicación</h3>
+            <p class="meta">FLACSO · 2013 · Promedio: 8/10</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="tecnica">
+        <h2 id="tecnica">Capacitación técnica y herramientas digitales</h2>
+        <ul>
+          <li><strong>Análisis de datos:</strong> Excel Análisis de Datos — Google/Coursera (2021); Introducción a Big Data — Huawei (2022).</li>
+          <li><strong>Programación y Web3:</strong> JavaScript básico — UTN (2024); Solidity y Fabric, smart contracts y blockchain — UTN (2025).</li>
+          <li><strong>Multimedia:</strong> <a href="https://troikatronix.com/">Troikatronix Isadora</a> para control interactivo en tiempo real; <a href="https://resolume.com/">Resolume Arena</a> para VJ y video mapping (2026).</li>
+          <li><strong>Otros:</strong> Adobe Photoshop, Reader, Visio, GanttProject y Microsoft Office.</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="proyectos">
+        <h2 id="proyectos">Proyectos destacados</h2>
+        <a class="project-link" href="https://sincoordenadas.com.ar/360cuarzo/">
+          <strong>🥽 Proyecto Cuarzo 360° — Realidad Aumentada</strong>
+          <span class="muted">Ver experiencia interactiva</span>
+        </a>
+        <a class="project-link" href="https://paras.id/5rdenadas.near?tab=collections">
+          <strong>🎨 Colecciones NFT / Web3</strong>
+          <span class="muted">Explorar galería en Paras.id</span>
+        </a>
+      </section>
+    </div>
+
+    <aside class="sidebar" aria-label="Competencias y datos complementarios">
+      <section class="sidebar-card" aria-labelledby="competencias">
+        <h2 id="competencias">Competencias clave</h2>
+        <ul class="skill-list">
+          <li><strong>Gestión de proyectos</strong>Planificación, ejecución, presupuestos y seguimiento; metodologías ágiles, Scrum y PMI.</li>
+          <li><strong>Análisis e indicadores</strong>Recolección de datos, tableros de gestión, analítica y reportes institucionales (SGI).</li>
+          <li><strong>Relaciones comunitarias</strong>FPIC/CPLI, articulación territorial en el NOA y la Puna, y programas de becas.</li>
+          <li><strong>Recursos humanos</strong>Gestión del clima, resolución de conflictos, gobernanza e investigaciones internas.</li>
+          <li><strong>Tecnología y multimedia</strong>Isadora, Resolume Arena, Web 3.0 y experiencias AR/VR 360°.</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-card" aria-labelledby="certificaciones">
+        <h2 id="certificaciones">Certificaciones</h2>
+        <ul>
+          <li><strong>Global Schools Advocate</strong><br><span class="muted">UN Sustainable Development Solutions Network · 2022</span></li>
+          <li><strong>Solutionary Micro-Credential</strong><br><span class="muted">Institute for Human Education, EE. UU. · 2025</span></li>
+        </ul>
+      </section>
+
+      <section class="sidebar-card" aria-labelledby="idiomas">
+        <h2 id="idiomas">Idiomas</h2>
+        <ul>
+          <li><strong>Inglés:</strong> avanzado, oral y escrito.</li>
+          <li><strong>Italiano:</strong> intermedio, oral y escrito.</li>
+          <li><strong>Portugués:</strong> básico, oral.</li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    <p>María Silvia Morosini · Salta, Argentina</p>
+  </footer>
+</body>
+</html>
