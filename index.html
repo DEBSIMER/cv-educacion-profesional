@@ -3,22 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#142d4e">
+  <meta name="theme-color" content="#183b36">
   <meta name="description" content="CV profesional de María Silvia Morosini: educación, gestión de proyectos, cultura, tecnología y recursos humanos.">
   <title>María Silvia Morosini | CV Profesional</title>
   <style>
     :root {
       color-scheme: light;
-      --ink: #182b43;
-      --muted: #53647a;
-      --navy: #142d4e;
-      --blue: #2871a8;
-      --teal: #2b827c;
-      --paper: #ffffff;
-      --background: #f3f6fa;
-      --line: #dce4ed;
-      --soft-blue: #eaf2f8;
-      --shadow: 0 16px 45px rgba(20, 45, 78, .08);
+      --ink: #26332f;
+      --muted: #65716c;
+      --green: #183b36;
+      --green-soft: #eaf0ec;
+      --gold: #bd9a5c;
+      --paper: #fffefa;
+      --background: #f5f3ed;
+      --line: #e5e1d7;
+      --shadow: 0 14px 36px rgba(37, 49, 43, .07);
     }
 
     * { box-sizing: border-box; }
@@ -27,92 +26,93 @@
       margin: 0;
       background: var(--background);
       color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Segoe UI", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 16px;
-      line-height: 1.65;
+      line-height: 1.7;
     }
-    a { color: var(--blue); text-underline-offset: 3px; }
-    a:hover { color: var(--teal); }
-    a:focus-visible, button:focus-visible { outline: 3px solid #e6a93d; outline-offset: 3px; }
-    .skip-link {
-      position: absolute; left: 1rem; top: -5rem; z-index: 10;
-      padding: .7rem 1rem; background: #fff; border-radius: .5rem;
-    }
+    a { color: #315f53; text-underline-offset: 3px; }
+    a:hover { color: #96743d; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 10; padding: .7rem 1rem; background: #fff; border-radius: .5rem; }
     .skip-link:focus { top: 1rem; }
     .hero {
       position: relative; overflow: hidden;
-      padding: 4.5rem 1.25rem 3.75rem;
+      padding: 3.8rem 1.25rem 3.5rem;
       color: #fff;
-      background: linear-gradient(125deg, #142d4e 0%, #1c5277 68%, #267c7a 100%);
+      background: linear-gradient(125deg, #173b35 0%, #234b42 62%, #496a58 100%);
     }
-    .hero::after {
-      content: ""; position: absolute; width: 360px; height: 360px;
-      right: -100px; top: -180px; border: 1px solid rgba(255,255,255,.18);
-      border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.04), 0 0 0 86px rgba(255,255,255,.035);
-    }
-    .hero-inner, main, footer { width: min(1080px, calc(100% - 2rem)); margin-inline: auto; }
-    .eyebrow { margin: 0 0 .7rem; color: #b7d9e8; font-size: .82rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
-    h1 { max-width: 800px; margin: 0; font-size: clamp(2.35rem, 6vw, 4.5rem); line-height: 1.06; letter-spacing: -.045em; }
-    .hero-title { max-width: 760px; margin: 1.15rem 0 1.5rem; color: #e0edf5; font-size: clamp(1.05rem, 2vw, 1.3rem); }
-    .contact-list { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; margin: 0; padding: 0; list-style: none; }
+    .hero::after { content: ""; position: absolute; width: 410px; height: 410px; right: -120px; top: -230px; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.035), 0 0 0 86px rgba(255,255,255,.025); }
+    .hero-inner, main, footer { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
+    .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 3rem; align-items: center; }
+    .eyebrow { margin: 0 0 .75rem; color: #d7c49b; font-size: .78rem; font-weight: 750; letter-spacing: .17em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.6rem, 6vw, 4.7rem); font-weight: 500; line-height: 1.05; letter-spacing: -.035em; }
+    .hero-title { max-width: 740px; margin: 1.15rem 0 1.5rem; color: #e8eee8; font-size: clamp(1.05rem, 2vw, 1.25rem); }
+    .contact-list { display: flex; flex-wrap: wrap; gap: .55rem 1.2rem; margin: 0; padding: 0; list-style: none; color: #f4f3ec; font-size: .94rem; }
     .contact-list a { color: #fff; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.8rem; }
-    .button {
-      display: inline-flex; align-items: center; justify-content: center;
-      min-height: 44px; padding: .65rem 1rem; border: 1px solid rgba(255,255,255,.5);
-      border-radius: .55rem; color: #fff; font-weight: 700; text-decoration: none;
-    }
-    .button.primary { border-color: #fff; background: #fff; color: var(--navy); }
+    .contact-list a:hover { color: #e6d3aa; }
+    .portrait { position: relative; width: 210px; aspect-ratio: 1; justify-self: end; padding: 7px; border: 1px solid rgba(224, 204, 157, .85); border-radius: 50%; background: rgba(255,255,255,.08); box-shadow: 0 14px 32px rgba(0,0,0,.2); }
+    .portrait img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center 32%; }
+    .portrait-fallback { display: none; position: absolute; inset: 7px; place-items: center; border-radius: 50%; background: #e9e3d5; color: var(--green); font-family: Georgia, serif; font-size: 3rem; }
+    .portrait.image-missing img { display: none; }
+    .portrait.image-missing .portrait-fallback { display: grid; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.65rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .62rem 1rem; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; color: #fff; font: inherit; font-size: .92rem; font-weight: 700; text-decoration: none; cursor: pointer; }
+    .button.primary { border-color: #e0cc9d; background: #e0cc9d; color: #233b34; }
     .button:hover { background: rgba(255,255,255,.12); color: #fff; }
-    .button.primary:hover { background: #eaf2f8; color: var(--navy); }
-    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 285px; gap: 1.5rem; align-items: start; padding-block: 2rem 3rem; }
-    .content { display: grid; gap: 1.25rem; min-width: 0; }
-    .card, .sidebar-card { background: var(--paper); border: 1px solid var(--line); border-radius: .9rem; box-shadow: var(--shadow); }
-    .card { padding: clamp(1.25rem, 3vw, 2rem); }
-    .sidebar { display: grid; gap: 1.25rem; }
-    .sidebar-card { padding: 1.35rem; }
-    h2 { margin: 0 0 1rem; color: var(--navy); font-size: 1.4rem; letter-spacing: -.02em; }
-    h3 { margin: 0; color: var(--navy); font-size: 1.08rem; line-height: 1.4; }
+    .button.primary:hover { background: #eadbb8; color: #233b34; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 1.4rem; align-items: start; padding-block: 2rem 3rem; }
+    .content, .sidebar { display: grid; gap: 1.15rem; min-width: 0; }
+    .card, .sidebar-card { background: var(--paper); border: 1px solid var(--line); border-radius: .8rem; box-shadow: var(--shadow); }
+    .card { padding: clamp(1.25rem, 3vw, 1.9rem); }
+    .sidebar-card { padding: 1.3rem; }
+    h2 { display: flex; align-items: center; gap: .7rem; margin: 0 0 1rem; color: var(--green); font-family: Georgia, "Times New Roman", serif; font-size: 1.42rem; font-weight: 600; letter-spacing: -.01em; }
+    h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+    h3 { margin: 0; color: var(--green); font-size: 1.04rem; line-height: 1.4; }
     p { margin: .55rem 0 0; }
     .muted, .meta { color: var(--muted); }
-    .meta { margin-top: .2rem; font-size: .93rem; }
-    .timeline { display: grid; gap: 1.35rem; }
-    .entry { position: relative; padding-left: 1.15rem; border-left: 2px solid #d6e5ee; }
-    .entry::before { content: ""; position: absolute; left: -6px; top: .35rem; width: 10px; height: 10px; border-radius: 50%; background: var(--teal); }
+    .meta { margin-top: .2rem; font-size: .92rem; }
+    .timeline { display: grid; gap: 1.3rem; }
+    .entry { position: relative; padding-left: 1.1rem; border-left: 1px solid #d5d9ce; }
+    .entry::before { content: ""; position: absolute; left: -4px; top: .48rem; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
     ul { padding-left: 1.2rem; }
-    .entry ul { margin: .55rem 0 0; }
+    .entry ul { margin: .5rem 0 0; }
     li + li { margin-top: .3rem; }
-    .skill-list { display: grid; gap: .8rem; margin: 0; padding: 0; list-style: none; }
-    .skill-list li { padding: .75rem .85rem; border-radius: .6rem; background: var(--soft-blue); }
+    .skill-list { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; }
+    .skill-list li { padding: .7rem .8rem; border: 1px solid #e8e9df; border-radius: .55rem; background: #f7f7f1; font-size: .93rem; }
     .skill-list li + li { margin-top: 0; }
-    .skill-list strong { display: block; color: var(--navy); }
-    .tag-list { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
-    .tag-list li { padding: .35rem .65rem; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--muted); font-size: .88rem; }
-    .tag-list li + li { margin-top: 0; }
-    .project-link { display: block; padding: .85rem 0; border-top: 1px solid var(--line); }
+    .skill-list strong { display: block; margin-bottom: .1rem; color: var(--green); }
+    .project-link { display: block; padding: .8rem 0; border-top: 1px solid var(--line); text-decoration: none; }
     .project-link:first-of-type { border-top: 0; padding-top: 0; }
-    .project-link strong { display: block; color: var(--navy); }
+    .project-link strong { display: block; color: var(--green); }
+    .project-link:hover strong { color: #96743d; }
     footer { padding: 0 0 2rem; color: var(--muted); font-size: .9rem; text-align: center; }
-    @media (max-width: 800px) {
+    @media (max-width: 820px) {
+      .hero-inner { grid-template-columns: minmax(0, 1fr) 170px; gap: 1.5rem; }
+      .portrait { width: 165px; }
       .layout { grid-template-columns: 1fr; }
       .sidebar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
-    @media (max-width: 560px) {
-      .hero { padding-block: 3.2rem 2.8rem; }
-      .hero-inner, main, footer { width: min(100% - 1.25rem, 1080px); }
+    @media (max-width: 600px) {
+      .hero { padding-block: 2.8rem 2.5rem; }
+      .hero-inner, main, footer { width: min(100% - 1.25rem, 1120px); }
+      .hero-inner { grid-template-columns: 1fr; gap: 1.4rem; }
+      .portrait { grid-row: 1; justify-self: start; width: 132px; }
+      h1 { font-size: clamp(2.4rem, 12vw, 3.5rem); }
       .sidebar { grid-template-columns: 1fr; }
       .contact-list { display: grid; gap: .35rem; }
     }
     @media print {
       :root { --background: #fff; --shadow: none; }
-      body { background: #fff; font-size: 10.5pt; }
-      .hero { padding: 1.5rem 0; color: var(--ink); background: #fff; border-bottom: 2px solid var(--navy); }
+      body { background: #fff; font-size: 10pt; }
+      .hero { padding: 1rem 0; color: var(--ink); background: #fff; border-bottom: 2px solid var(--green); }
       .hero::after, .hero-actions, .skip-link { display: none; }
-      .eyebrow, .hero-title, .contact-list a { color: var(--ink); }
-      h1 { font-size: 30pt; }
-      .layout { grid-template-columns: 1fr 240px; gap: .8rem; padding-block: .8rem; }
-      .content, .sidebar { gap: .7rem; }
-      .card, .sidebar-card { padding: .85rem; box-shadow: none; break-inside: avoid; }
+      .hero-inner { grid-template-columns: minmax(0, 1fr) 115px; gap: 1rem; }
+      .portrait { width: 110px; box-shadow: none; }
+      .eyebrow, .hero-title, .contact-list, .contact-list a { color: var(--ink); }
+      h1 { font-size: 28pt; }
+      .layout { grid-template-columns: 1fr 240px; gap: .65rem; padding-block: .65rem; }
+      .content, .sidebar { gap: .6rem; }
+      .card, .sidebar-card { padding: .7rem; box-shadow: none; break-inside: avoid; }
       a { color: inherit; }
       footer { padding-bottom: 0; }
     }
@@ -122,18 +122,24 @@
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="hero">
     <div class="hero-inner">
-      <p class="eyebrow">Currículum profesional · Salta, Argentina</p>
-      <h1>María Silvia Morosini</h1>
-      <p class="hero-title">Licenciada y Profesora en Expresión Corporal <span aria-hidden="true">|</span> Gestión de Proyectos, Tecnología y Recursos Humanos</p>
-      <ul class="contact-list" aria-label="Datos de contacto">
-        <li>📍 Salta, Argentina</li>
-        <li>📱 <a href="https://wa.me/5493875089464">+54 9 387 508 9464</a></li>
-        <li>✉️ <a href="mailto:msilvia.morosini@gmail.com">msilvia.morosini@gmail.com</a></li>
-        <li>🌐 <a href="https://www.linkedin.com/in/mar%C3%ADasilviamorosini">LinkedIn</a></li>
-      </ul>
-      <div class="hero-actions">
-        <a class="button primary" href="mailto:msilvia.morosini@gmail.com">Contactar</a>
-        <button class="button" type="button" onclick="window.print()">Imprimir / guardar como PDF</button>
+      <div class="hero-copy">
+        <p class="eyebrow">Currículum profesional · Salta, Argentina</p>
+        <h1>María Silvia Morosini</h1>
+        <p class="hero-title">Licenciada y Profesora en Expresión Corporal <span aria-hidden="true">|</span> Gestión de Proyectos, Tecnología y Recursos Humanos</p>
+        <ul class="contact-list" aria-label="Datos de contacto">
+          <li>📍 Salta, Argentina</li>
+          <li>📱 <a href="https://wa.me/5493875089464">+54 9 387 508 9464</a></li>
+          <li>✉️ <a href="mailto:msilvia.morosini@gmail.com">msilvia.morosini@gmail.com</a></li>
+          <li>🌐 <a href="https://www.linkedin.com/in/mar%C3%ADasilviamorosini">LinkedIn</a></li>
+        </ul>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:msilvia.morosini@gmail.com">Contactar</a>
+          <button class="button" type="button" onclick="window.print()">Imprimir / guardar como PDF</button>
+        </div>
+      </div>
+      <div class="portrait" id="portrait">
+        <img src="foto-perfil.jpg" alt="Retrato de María Silvia Morosini" onerror="this.closest('.portrait').classList.add('image-missing')">
+        <span class="portrait-fallback" aria-hidden="true">SM</span>
       </div>
     </div>
   </header>
