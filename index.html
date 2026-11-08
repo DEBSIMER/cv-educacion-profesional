@@ -50,6 +50,9 @@
     .contact-list { display: flex; flex-wrap: wrap; gap: .55rem 1.2rem; margin: 0; padding: 0; list-style: none; color: #f4f3ec; font-size: .94rem; }
     .contact-list a { color: #fff; }
     .contact-list a:hover { color: #e6d3aa; }
+    .language-switch { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: 1rem; color: #e8eee8; font-size: .9rem; }
+    .language-switch a { display: inline-flex; min-height: 36px; align-items: center; padding: .3rem .75rem; border: 1px solid rgba(255,255,255,.45); border-radius: 999px; color: #fff; text-decoration: none; }
+    .language-switch a:hover { border-color: #e0cc9d; background: rgba(255,255,255,.1); color: #fff; }
     .portrait { position: relative; width: 210px; aspect-ratio: 1; justify-self: end; padding: 7px; border: 1px solid rgba(224, 204, 157, .85); border-radius: 50%; background: rgba(255,255,255,.08); box-shadow: 0 14px 32px rgba(0,0,0,.2); }
     .portrait img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center 32%; }
     .portrait-fallback { display: none; position: absolute; inset: 7px; place-items: center; border-radius: 50%; background: #e9e3d5; color: var(--green); font-family: Georgia, serif; font-size: 3rem; }
@@ -105,7 +108,7 @@
       :root { --background: #fff; --shadow: none; }
       body { background: #fff; font-size: 10pt; }
       .hero { padding: 1rem 0; color: var(--ink); background: #fff; border-bottom: 2px solid var(--green); }
-      .hero::after, .hero-actions, .skip-link { display: none; }
+      .hero::after, .hero-actions, .skip-link, .language-switch { display: none; }
       .hero-inner { grid-template-columns: minmax(0, 1fr) 115px; gap: 1rem; }
       .portrait { width: 110px; box-shadow: none; }
       .eyebrow, .hero-title, .contact-list, .contact-list a { color: var(--ink); }
@@ -132,6 +135,11 @@
           <li>✉️ <a href="mailto:msilvia.morosini@gmail.com">msilvia.morosini@gmail.com</a></li>
           <li>🌐 <a href="https://www.linkedin.com/in/mar%C3%ADasilviamorosini">LinkedIn</a></li>
         </ul>
+        <nav class="language-switch" aria-label="Traducir esta página automáticamente">
+          <span>Traducir:</span>
+          <a href="https://translate.google.com/translate?sl=es&amp;tl=en&amp;u=https%3A%2F%2Fdebsimer.github.io%2Fcv-educacion-profesional%2F" target="_blank" rel="noopener noreferrer" lang="en" hreflang="en">English</a>
+          <a href="https://translate.google.com/translate?sl=es&amp;tl=it&amp;u=https%3A%2F%2Fdebsimer.github.io%2Fcv-educacion-profesional%2F" target="_blank" rel="noopener noreferrer" lang="it" hreflang="it">Italiano</a>
+        </nav>
         <div class="hero-actions">
           <a class="button primary" href="mailto:msilvia.morosini@gmail.com">Contactar</a>
           <button class="button" type="button" onclick="window.print()">Imprimir / guardar como PDF</button>
