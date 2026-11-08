@@ -12,35 +12,21 @@
       --ink: #26332f;
       --muted: #65716c;
       --green: #183b36;
-      --green-soft: #eaf0ec;
       --gold: #bd9a5c;
       --paper: #fffefa;
       --background: #f5f3ed;
       --line: #e5e1d7;
       --shadow: 0 14px 36px rgba(37, 49, 43, .07);
     }
-
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--background);
-      color: var(--ink);
-      font-family: "Segoe UI", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-    }
+    body { margin: 0; background: var(--background); color: var(--ink); font-family: "Segoe UI", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; line-height: 1.7; }
     a { color: #315f53; text-underline-offset: 3px; }
     a:hover { color: #96743d; }
     a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
     .skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 10; padding: .7rem 1rem; background: #fff; border-radius: .5rem; }
     .skip-link:focus { top: 1rem; }
-    .hero {
-      position: relative; overflow: hidden;
-      padding: 3.8rem 1.25rem 3.5rem;
-      color: #fff;
-      background: linear-gradient(125deg, #173b35 0%, #234b42 62%, #496a58 100%);
-    }
+    .hero { position: relative; overflow: hidden; padding: 3.8rem 1.25rem 3.5rem; color: #fff; background: linear-gradient(125deg, #173b35 0%, #234b42 62%, #496a58 100%); }
     .hero::after { content: ""; position: absolute; width: 410px; height: 410px; right: -120px; top: -230px; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.035), 0 0 0 86px rgba(255,255,255,.025); }
     .hero-inner, main, footer { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
     .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 3rem; align-items: center; }
@@ -84,10 +70,6 @@
     .skill-list li { padding: .7rem .8rem; border: 1px solid #e8e9df; border-radius: .55rem; background: #f7f7f1; font-size: .93rem; }
     .skill-list li + li { margin-top: 0; }
     .skill-list strong { display: block; margin-bottom: .1rem; color: var(--green); }
-    .project-link { display: block; padding: .8rem 0; border-top: 1px solid var(--line); text-decoration: none; }
-    .project-link:first-of-type { border-top: 0; padding-top: 0; }
-    .project-link strong { display: block; color: var(--green); }
-    .project-link:hover strong { color: #96743d; }
     footer { padding: 0 0 2rem; color: var(--muted); font-size: .9rem; text-align: center; }
     @media (max-width: 820px) {
       .hero-inner { grid-template-columns: minmax(0, 1fr) 170px; gap: 1.5rem; }
@@ -133,7 +115,7 @@
           <li>📍 Salta, Argentina</li>
           <li>📱 <a href="https://wa.me/5493875089464">+54 9 387 508 9464</a></li>
           <li>✉️ <a href="mailto:msilvia.morosini@gmail.com">msilvia.morosini@gmail.com</a></li>
-          <li>🌐 <a href="https://www.linkedin.com/in/mar%C3%ADasilviamorosini">LinkedIn</a></li>
+          <li>🌐 <a href="https://www.linkedin.com/in/mar%C3%ADasilviamorosini/">LinkedIn</a></li>
         </ul>
         <nav class="language-switch" aria-label="Traducir esta página automáticamente">
           <span>Traducir:</span>
@@ -241,18 +223,6 @@
           <li><strong>Multimedia:</strong> <a href="https://troikatronix.com/">Troikatronix Isadora</a> para control interactivo en tiempo real; <a href="https://resolume.com/">Resolume Arena</a> para VJ y video mapping (2026).</li>
           <li><strong>Otros:</strong> Adobe Photoshop, Reader, Visio, GanttProject y Microsoft Office.</li>
         </ul>
-      </section>
-
-      <section class="card" aria-labelledby="proyectos">
-        <h2 id="proyectos">Proyectos destacados</h2>
-        <a class="project-link" href="https://sincoordenadas.com.ar/360cuarzo/">
-          <strong>🥽 Proyecto Cuarzo 360° — Realidad Aumentada</strong>
-          <span class="muted">Ver experiencia interactiva</span>
-        </a>
-        <a class="project-link" href="https://paras.id/5rdenadas.near?tab=collections">
-          <strong>🎨 Colecciones NFT / Web3</strong>
-          <span class="muted">Explorar galería en Paras.id</span>
-        </a>
       </section>
     </div>
 
